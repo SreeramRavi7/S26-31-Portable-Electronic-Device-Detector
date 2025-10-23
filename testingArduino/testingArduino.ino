@@ -1,6 +1,7 @@
 int redLED = 8;
 int greenLED = 9;
 int yellowLED = 10;
+int buzzer=11
 String input = "";
 
 void setup() {
@@ -26,9 +27,11 @@ void loop() {
       digitalWrite(yellowLED, LOW);
       digitalWrite(redLED, LOW);
       digitalWrite(greenLED, HIGH);
+      digitalWrite(buzzer, HIGH);
       delay(2000);
       digitalWrite(greenLED, LOW);
       digitalWrite(yellowLED, HIGH);
+      digitalWrite(buzzer, LOW);
     }
   }
 }
